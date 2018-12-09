@@ -86,4 +86,5 @@ a{text-decoration: none;}
 }
 .header .header-search{
     float: right;
-    width: 296px;}
+    width: 296px;
+    height: 50px;}
