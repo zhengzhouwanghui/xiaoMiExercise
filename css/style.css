@@ -74,17 +74,32 @@ a{text-decoration: none;}
 }
 .topbar .container .topbar-info a:last-child{
     padding: 0 10px;}
-.header{
+.site-header{
     height: 100px;}
-.header .header-logo{
+.site-header .header-logo{
     float: left;
     width: 62px;
-    margin-top: 22px;}
-.header .header-nav{
+    margin-top: 22px;
+    position: relative;
+    display: block;
+    height: 55px;
+    overflow: hidden;
+}
+.site-header .header-logo a{
+    display: block;
+    width: 55px;
+    height: 55px;
+    background: #ff6700 url(../img/mi-logo.png) 50% 50% no-repeat;
+}
+.site-header .header-nav{
     float: left;
     width: 820px;
 }
-.header .header-search{
+.site-header .header-nav ul li{
+    float: left;
+    list-style: none;
+}
+.site-header .header-search{
     float: right;
     width: 296px;
-    height: 50px;}
+    height: 50px;+++}
