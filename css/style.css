@@ -219,15 +219,18 @@ a{text-decoration: none;}
 }
 .seckill .seckill-banner ul li span em{
     display: inline-block;
-    font-size: 14px;
+    font-size: 18px;
     margin-left: 0;
     line-height: 20px;
 }
 .seckill .seckill-banner ul li:first-child{
     background-color: #f1393a;}
+.seckill .seckill-banner ul li:first-child span em{
+	font-size: 14px;	
+	}
 .seckill-con ul{
     list-style: none;
-    background-color: red;
+	margin-right:-13px;
     padding-left: 0;
 }
 .seckill-con ul::after{
@@ -240,4 +243,75 @@ a{text-decoration: none;}
     height: 190px;
     background-color: #fff;
     margin: 0 13px 13px 0;
+	transition: all .2s linear;
+}
+.seckill-con li:hover{
+	box-shadow: 8px 15px 6px 5px #eee;
+	margin-top:-3px;
+	margin-bottom:16px;
+	
+}
+.seckill .notic{
+	font-size:12px;
+	color:#999;
+	margin-top:100px;
+	padding-bottom:35px;
+}
+.seckill-con  ul .bg{float:left;}
+.seckill-con  ul .bg img{
+	width:190px;
+}
+.seckill-con  ul .info{
+	margin-left:210px;
+	width:190px;
+	height:190px;
+	padding-top:30px;
+}
+.seckill-con  ul .info a .btn-primary{
+	display:block;
+	width:118px;
+	heigth:28px;
+	line-height: 28px;
+	border:#f1393a 1px solid;
+	background-color:#f1393a;
+	text-align:center;
+	margin-top: 19px;
+    font-size: 14px;
+	color: #fff;
+}
+
+.seckill-con  ul .info .name{
+	font-size: 16px;
+    color: #333;
+    height: 16px;
+    overflow: hidden;
+    _zoom: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    line-height: 16px;
+}
+.seckill-con  ul .info .desc{
+    color: rgba(0,0,0,0.54);
+    margin-top: 7px;
+    font-size: 12px;
+    line-height: 16px;
+    height: 32px;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;}
+.seckill-con  ul .info .price{
+	display:block;
+	font-size: 16px;
+    color: #f1393a;
+    line-height: 1;
+	margin-top:14px;
+    margin-bottom: 0;}
+.seckill-con  ul .info .price del{
+	color:#999;
+	font-size:12px;
+	line-height: 1;
+	margin-left:10px;
 }
