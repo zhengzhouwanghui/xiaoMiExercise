@@ -55,6 +55,7 @@ function addLiClass() {
 
     }
 }
+//抢购时间栏设置滚动260距离固定
 var seckillBanner = document.querySelector('.seckill-banner');
 window.onscroll = function (ev) {
     //var scrollTop = document.documentElement.scrollTop;
@@ -65,4 +66,21 @@ window.onscroll = function (ev) {
     }else{seckillBanner.className = 'seckill-banner'
     }
 }
+//倒计时
+    var maxtime = 60 * 60; //一个小时，按秒计算，自己调整!
+    function count() {
+        if (maxtime >= 0) {
+            minutes = Math.floor(maxtime / 60);
+            seconds = Math.floor(maxtime % 60);
+            msg = "抢购中" + "<br>" + "距结束 " + "00:" +minutes + ":" + seconds;
+            document.all["timer"].innerHTML = msg;
+            if (maxtime == 5 * 60)alert("还剩5分钟");
+            --maxtime;
+            } else{
+            clearInterval(timer);
+            alert("抢购已结束!");
+        }
+    }
+    timer = setInterval("count()", 1000);
+
 addLoadEvent(addLiClass);
